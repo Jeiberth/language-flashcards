@@ -11,11 +11,11 @@ const Navigation = () => {
   const { t } = useI18n();
 
   const navItems = [
-    { path: '/', icon: Home, label: t('nav.home') },
-    { path: '/dashboard', icon: BarChart3, label: t('nav.dashboard') },
-    { path: '/review', icon: BookOpen, label: t('nav.review') },
-    { path: '/manage', icon: Plus, label: t('nav.manage') },
-    { path: '/settings', icon: Settings, label: t('nav.settings') },
+    { path: '/language-flashcards/', icon: Home, label: t('nav.home') },
+    { path: '/language-flashcards/dashboard', icon: BarChart3, label: t('nav.dashboard') },
+    { path: '/language-flashcards/review', icon: BookOpen, label: t('nav.review') },
+    { path: '/language-flashcards/manage', icon: Plus, label: t('nav.manage') },
+    { path: '/language-flashcards/settings', icon: Settings, label: t('nav.settings') },
   ];
 
   return (
