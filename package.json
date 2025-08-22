@@ -2,7 +2,7 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Jeiberth.github.io/language-flashcards",
+  "homepage": "https://vocabulary.help",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
