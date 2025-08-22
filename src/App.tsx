@@ -26,18 +26,18 @@ const App = () => (
           <TooltipProvider>
             <AppProvider>
             <Toaster />
-            
+
             <Sonner />
             <BrowserRouter>
               <div className="min-h-screen bg-background">
                 <Navigation />
                 <Routes>
-                  <Route path="/language-flashcards/" element={<Home />} />
-                  <Route path="/language-flashcards/dashboard" element={<Dashboard />} />
-                  <Route path="/language-flashcards/review" element={<Review />} />
-                  <Route path="/language-flashcards/manage" element={<Manage />} />
-                  <Route path="/language-flashcards/settings" element={<Settings />} />
-                  <Route path="/language-flashcards/*" element={<NotFound />} />
+                  <Route path="/" element={<Home />} />
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/review" element={<Review />} />
+                  <Route path="/manage" element={<Manage />} />
+                  <Route path="/settings" element={<Settings />} />
+                  <Route path="/*" element={<NotFound />} />
                 </Routes>
               </div>
             </BrowserRouter>
