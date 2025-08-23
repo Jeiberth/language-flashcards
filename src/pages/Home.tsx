@@ -40,7 +40,7 @@ const Home = () => {
         {/* Hero Section */}
         <div className="text-center space-y-6 py-12">
           <div className="inline-flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white mb-4">
-            <BookOpen size={32} />
+            <img src="/logo.png" alt=""  style={{ width: '50px', height: 'auto' }}/>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
             {t('home.title')}

@@ -15,6 +15,7 @@ import Review from "./pages/Review";
 import Manage from "./pages/Manage";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import ScrollToTopOnRouteChange from "@/components/ScrollToTopOnRouteChange";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
 
             <Sonner />
             <BrowserRouter>
+             <ScrollToTopOnRouteChange />
               <div className="min-h-screen bg-background">
                 <Navigation />
                 <Routes>

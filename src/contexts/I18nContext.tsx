@@ -30,7 +30,7 @@ const translations = {
     'nav.settings': 'Settings',
     
     // Home page
-    'home.title': 'Language Flashcards',
+    'home.title': 'Vocabulary.Help',
     'home.subtitle': 'Master vocabulary with smart spaced repetition, offline storage, and pronunciation practice',
     'home.continue.learning': 'Continue Learning',
     'home.view.progress': 'View Progress',
@@ -212,7 +212,7 @@ const translations = {
     'nav.settings': 'Configuración',
     
     // Home page
-    'home.title': 'Tarjetas de Idioma',
+    'home.title': 'Vocabulary.Help',
     'home.subtitle': 'Domina el vocabulario con repetición espaciada inteligente, almacenamiento offline y práctica de pronunciación',
     'home.continue.learning': 'Continuar Aprendiendo',
     'home.view.progress': 'Ver Progreso',
@@ -394,7 +394,7 @@ const translations = {
     'nav.settings': 'Paramètres',
     
     // Home page
-    'home.title': 'Cartes de Langue',
+    'home.title': 'Vocabulary.Help',
     'home.subtitle': 'Maîtrisez le vocabulaire avec la répétition espacée intelligente, le stockage hors ligne et la pratique de la prononciation',
     'home.continue.learning': 'Continuer l\'Apprentissage',
     'home.view.progress': 'Voir le Progrès',

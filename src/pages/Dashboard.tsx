@@ -4,10 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { useApp } from '@/contexts/AppContext';
 import { useI18n } from '@/contexts/I18nContext';
 import { BarChart3, BookOpen, Target, TrendingUp, Zap, Award } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
   const { stats } = useApp();
   const { t } = useI18n();
+  const navigate = useNavigate();
 
   const statCards = [
     {
@@ -172,19 +174,19 @@ const Dashboard = () => {
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <button className="p-4 rounded-lg border dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-center">
+              <button onClick={() => navigate('/review')} className="p-4 rounded-lg border dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-center">
                 <BookOpen className="mx-auto mb-2 text-blue-600 dark:text-blue-400" size={24} />
                 <div className="text-sm font-medium dark:text-white">{t('dashboard.actions.review')}</div>
               </button>
-              <button className="p-4 rounded-lg border dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-center">
+              <button onClick={() => navigate('/manage')} className="p-4 rounded-lg border dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-center">
                 <Target className="mx-auto mb-2 text-green-600 dark:text-green-400" size={24} />
                 <div className="text-sm font-medium dark:text-white">{t('dashboard.actions.add')}</div>
               </button>
-              <button className="p-4 rounded-lg border dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-center">
+              <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="p-4 rounded-lg border dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-center">
                 <BarChart3 className="mx-auto mb-2 text-purple-600 dark:text-purple-400" size={24} />
                 <div className="text-sm font-medium dark:text-white">{t('dashboard.actions.stats')}</div>
               </button>
-              <button className="p-4 rounded-lg border dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-center">
+              <button onClick={() => navigate('/settings')} className="p-4 rounded-lg border dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-center">
                 <Award className="mx-auto mb-2 text-orange-600 dark:text-orange-400" size={24} />
                 <div className="text-sm font-medium dark:text-white">{t('dashboard.actions.settings')}</div>
               </button>
